@@ -3,5 +3,9 @@ from django.shortcuts import render
 
 
 def first_page(request):
-
-    return render(request, './index.html')
+    a = "Новая страница"
+    text_index = "Something index text"
+    return render(request, './index.html',{
+        'a': a,
+        'text': text_index
+    })
