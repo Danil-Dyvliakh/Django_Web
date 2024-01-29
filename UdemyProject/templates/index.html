@@ -5,7 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-{{a}}
-<h1>{{text}}</h1>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<form action= "{% url 'thanks_page' %}" method="POST">
+    {% csrf_token %}
+    <label>Имя</label>
+    <input name="name">
+    <label>Телефон</label>
+    <input name="phone">
+    <button type="submit">Send</button>
+</form>
+
+<!--<h1></h1>-->
+<!--{% for obj in object_list %}-->
+
+<!--<h2>{{ obj.id }}</h2>-->
+<!--<h2>{{ obj.order_dt }}</h2>-->
+<!--<h2>{{ obj.order_name }}</h2>-->
+<!--<h2>{{ obj.order_phone }}</h2>-->
+<!--{% endfor %}-->
+<!--{form action = "" metod-->
 </body>
 </html>
